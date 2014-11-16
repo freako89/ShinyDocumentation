@@ -1,6 +1,6 @@
 ---
 title: "Spread Calculator for Brent and WTI"
-author: "Ng Zhi Xiong"
+author: "Alan Chee"
 highlighter: highlight.js
 output: html_document
 job: R Student
