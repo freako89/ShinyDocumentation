@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spread Calculator for Brent and WTI</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Spread Calculator for Brent and WTI">
+  <meta name="author" content="Ng Zhi Xiong">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Spread Calculator for Brent and WTI</h1>
+    <h2>Shiny App</h2>
+    <p>Ng Zhi Xiong<br/>R Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Description</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Brent and WTI are Crude Oil Futures traded on the ICE Exchange, and CME Exchange respectively</p>
+
+<p>The app calculates the spread, aka the price difference between the two</p>
+
+<h2>It only uses daily closing prices in the 2014 </h2>
+
+<h2>Inputs</h2>
+
+<ol>
+<li><p>Users can choose the No. of Contracts it would like to look at </p></li>
+<li><p>They can choose the price they would would have entered the market at</p></li>
+<li><p>They can choose the date which they would like to start plotting the graph</p></li>
+</ol>
+
+<h2></h2>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Output</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>Current Spread Price is the Spread Price as of the latest trading day</p></li>
+<li><p>Spread Entry Price - Current Spread will output the PNL</p></li>
+<li><p>The first graph plots the spread price</p></li>
+<li><p>The second graph calculates the % change in Brent and WTI. Then it plots the difference</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Difficulties</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Because we need to load latest dataset from Quandl, we can only load 2014 or it will take a lot of time espacially for people with slow internet connection</p>
+
+<pre><code>##    user  system elapsed 
+##    0.09    0.05    1.42
+</code></pre>
+
+<pre><code>##    user  system elapsed 
+##    0.16    0.02    3.61
+</code></pre>
+
+<hr>
+
+<h2>Usefulness</h2>
+
+<ol>
+<li><p>Show&#39;s spread data which many financial websites will not show</p></li>
+<li><p>It also calculates the difference in % change which many financial websites do not show also</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Description'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Output'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Difficulties'>
+         3
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
